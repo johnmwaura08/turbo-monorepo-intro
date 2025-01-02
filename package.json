@@ -5,7 +5,12 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start:docs": "turbo dev --filter=docs",
+    "start:nairobi": "turbo dev --filter=nairobi",
+    "start:kisumu": "turbo dev --filter=kisumu",
+    "start:mombasa": "turbo dev --filter=mombasa",
+    "start:electron": "turbo dev --filter=electron-app"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

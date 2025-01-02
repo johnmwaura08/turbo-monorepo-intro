@@ -1,6 +1,8 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import { Skeleton } from "@repo/ui/src";
+import { Skeleton2 } from "@repo/ui/components";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -31,6 +33,8 @@ export default function Home() {
           height={38}
           priority
         />
+        <Skeleton />
+        <Skeleton2 />
         <ol>
           <li>
             Get started by editing <code>apps/web/app/page.tsx</code>
